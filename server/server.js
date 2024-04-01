@@ -21,10 +21,10 @@ app.use(cors());
 connectToDb();
 
 // Routing
-
+ 
 app.get('/notes', notesController.fetchNotes);
 
-app.get('/notes/:id', notesController.fetchNote)
+app.get('/notes/:id', notesController.fetchNote);
 
 app.post('/notes', notesController.createNote);
 

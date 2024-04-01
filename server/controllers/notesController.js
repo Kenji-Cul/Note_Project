@@ -51,7 +51,7 @@ const updateNote = async (req, res) => {
     // Find updated note
     const note = await Note.findById(noteId);
     // Respond with it
-    res.json({not});
+    res.json({note});
 }
 
 const deleteNote = async (req, res) => {
